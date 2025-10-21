@@ -336,7 +336,7 @@ html {
   outline: none;
 }
 
-/* кастомная обводка при фокусе с клавиатуры */
+/*  обводка при фокусе с клавиатуры */
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
