@@ -28,11 +28,11 @@ html {
   gap: 30px;
   width: 100%;
   max-width: 1140px;
-  padding: 0 30px; /* горизонтальные отступы */
-  margin: 0 auto; /* центрирование */
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
-/* Стили для формы поиска */
+/* стили для формы поиска */
 .search-form {
   display: flex;
   flex-direction: row;
@@ -42,14 +42,15 @@ html {
   width: 100%;
 }
 
-/* Контейнер для списка карточек */
+/* контейнер для списка карточек */
 .content__details {
   display: flex;
   flex-direction: column;
-  flex: 1; /* растягиваем на всю доступную ширину */
-  height: 100%; /* растягиваем на всю доступную высоту */
-  gap: 26px; /* отступ между заголовком и зоной с карточками */
+  flex: 1;
+  height: 100%;
+  gap: 26px;
 }
+
 .result__video-container{
   margin-bottom:16px;
   height:386px;
@@ -62,13 +63,14 @@ html {
   height: 100%;
   object-fit: cover;
 }
+
 .content__list-container {
-  height: 300px; /* фиксированная высота */
-  overflow-y: auto; /* вертикальный скролл при переполнении */
+  height: 300px;
+  overflow-y: auto;
   position: relative;
 }
 
-.content__video-card { /*скролл */
+.content__video-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -77,15 +79,15 @@ html {
   max-width: 100%;
 }
 
-.content__video-card-thumbnail { /* параметры карточек скролла */
+.content__video-card-thumbnail {
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
 }
 
-.content__video-card-description-container { /* текст в карточке над скроллом */
-  flex-grow: 1; /* всё, что не занято */
+.content__video-card-description-container {
+  flex-grow: 1;
   min-width: 0;
   overflow: hidden;
   width: 100%;
@@ -97,11 +99,11 @@ html {
   row-gap: 30px;
 }
 
-/* Город, время суток */
+/* город, время суток */
 .search-form__fieldset-title {
-  font-weight: 400; /* вес шрифта(толщина) */
+  font-weight: 400;
   font-size: 18px;
-  margin-bottom: 5px; /* отступ снизу */
+  margin-bottom: 5px;
 }
 
 /* главный заголовок */
@@ -110,16 +112,16 @@ html {
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
-  text-transform: uppercase;/*верхний регистр*/
+  text-transform: uppercase;
 }
 
 .content__accent {
-  color: #545050; /* акцент на первыедые буквы */
+  color: #545050;
 }
 
 /* ссылки */
 .content__card-link {
-  text-decoration: none; /* подчёркивание */
+  text-decoration: none;
   color: #FFFFFF;
 }
 
@@ -129,10 +131,10 @@ html {
   font-size: 30px;
   line-height: 1;
   margin-bottom: 6px;
-  overflow: hidden;/* обрезка длинного текста многоточием */
-  text-overflow: ellipsis;  /* убирает лишнее */
-  white-space: nowrap; /* многоточие */
-  max-width: 100%; /* чтобы не выходил за предел */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
   width: 100%;
   display: block;
 }
@@ -143,13 +145,13 @@ html {
   font-size: 18px;
   line-height: 16.2px;
   margin: 0;
-  display: -webkit-box;/*обрезка*/
-  -webkit-line-clamp: 4; /* ограничиваем до 4 строк */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* стили для скрытия элементов, писала не я, дали в задании*/
+/* стили для скрытия элементов */
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -160,7 +162,7 @@ html {
   white-space: nowrap;
 }
 
-/*  fieldset и кнопку в строку */
+/* fieldset и кнопку в строку */
 .search-form {
   display: flex;
   flex-direction: row;
@@ -188,35 +190,35 @@ html {
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  width: fit-content;/* ширина по содержимому */
-  cursor: pointer;/* курсор-указатель при наведении */
+  width: fit-content;
+  cursor: pointer;
 }
 
 /* стилизация строки ввода */
 .search-form__textfield {
   border: none;
-  border-top: 1px solid currentColor;/* Верхняя граница текущим цветом */
+  border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   color: #fff;
-  font-family: inherit;/* Наследует шрифт от родителя */
+  font-family: inherit;
   font-size: 18px;
-  background-color: transparent;/* Прозрачный фон */
-  appearance: none;/* Убирает браузерные стили */
+  background-color: transparent;
+  appearance: none;
   padding: 2.5px 0;
   width: 225px;
 }
 
-.search-form__textfield:focus {/* Убираем стандартное браузерное выделение при фокусе */
+.search-form__textfield:focus {
   outline: none;
 }
 
-/*применяет стили к лейблу, если внутри него есть элемент в состоянии фокуса*/
+/* применяет стили к лейблу, если внутри него есть элемент в состоянии фокуса */
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;/* Белая обводка вокруг строки ввода */
+  outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
-/* Стилизация псевдочекбокса */
+/* стилизация псевдочекбокса */
 .search-form__pseudo-checkbox {
   display: flex;
   align-items: center;
@@ -227,33 +229,33 @@ html {
   position: relative;
 }
 
-/* Псевдоэлемент для отмеченного состояния */
+/* псевдоэлемент для отмеченного состояния */
 .search-form__pseudo-checkbox::after {
-  content: "";/* Обязательно для псевдоэлемента */
-  width: 15px; /* на 1px меньше с каждой стороны */
+  content: "";
+  width: 15px;
   height: 15px;
   background-color: #fff;
-  opacity: 0;/* Изначально невидим */
-  transition: opacity 0.3s;/* Плавное появление */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  opacity: 1;/* Показываем внутренний квадрат при отмеченном чекбоксе */
+  opacity: 1;
 }
 
-/* Подчёркивание текста при наведении на лейбл */
+/* подчёркивание текста при наведении на лейбл */
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
-/* Стили для кнопки */
+/* стили для кнопки */
 .button {
   background: #00000000;
   border: 1px solid #fff;
   color: #fff;
   font-family: inherit;
   font-size: 18px;
-  cursor: pointer;/* Курсор-указатель */
+  cursor: pointer;
   padding: 0;
 }
 
@@ -262,19 +264,19 @@ html {
   padding: 5px 73px;
 }
 
-/* Индивидуальные стили для кнопки "Найти" */
+/* индивидуальные стили для кнопки "найти" */
 .search-form__submit-button {
   align-self: flex-end;
   padding: 5px 73px;
 }
 
-/* Индивидуальные стили для кнопки "Показать ещё" */
+/* индивидуальные стили для кнопки "показать ещё" */
 .more-button {
   width: 100%;
   padding: 5px 0;
 }
 
-/* Состояния для всех кнопок */
+/* состояния для всех кнопок */
 .button:hover {
   text-decoration: underline;
 }
@@ -291,16 +293,17 @@ html {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-/* Стилизация карточки */
+
+/* стилизация карточки */
 .content__card-link {
-  display: block; /* делаем карточку блочным элементом */
+  display: block;
   text-decoration: none;
   color: #FFFFFF;
-  padding: 2px; /* отступ для обводки */
+  padding: 2px;
   cursor: pointer;
 }
 
-/* Располагаем содержимое карточки в строку */
+/* располагаем содержимое карточки в строку */
 .content__video-card {
   display: flex;
   flex-direction: row;
@@ -309,44 +312,42 @@ html {
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  padding: 2px 0; /* отступы между элементами */
+  padding: 2px 0;
 }
 
-/* Текущая (активная) карточка */
+/* текущая (активная) карточка */
 .content__card-link_current {
   background: #545050;
 }
 
-/* Карточка при наведении */
+/* карточка при наведении */
 .content__card-link:hover .content__video-card-title,
 .content__card-link:hover .content__video-card-description {
   text-decoration: underline;
 }
 
-/* Карточка в активном состоянии */
+/* карточка в активном состоянии */
 .content__card-link:active {
   background: #545050;
 }
 
-/* Сброс стандартного фокуса */
+/* сброс стандартного фокуса */
 .content__card-link:focus {
   outline: none;
 }
 
-/* Кастомная обводка при фокусе с клавиатуры */
+/* кастомная обводка при фокусе с клавиатуры */
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
-/* Отступы для элементов списка чтобы обводка не прилипала */
+/* отступы для элементов списка чтобы обводка не прилипала */
 .content__list-item {
   padding: 0 3px;
 }
 
-
-
-/* Остальные стили остаются без изменений */
+/* остальные стили остаются без изменений */
 h1,
 h2,
 h3,
@@ -366,7 +367,7 @@ ol {
   list-style: none;
 }
 
-/* Кастомный скроллбар */
+/* кастомный скроллбар */
 .content__list-container::-webkit-scrollbar {
   width: 4px;
 }
@@ -378,4 +379,3 @@ ol {
 .content__list-container::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
-
